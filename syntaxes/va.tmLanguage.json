@@ -13,8 +13,17 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.va",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
+				"match": "\\b(if|while|for|return|analog|begin|parameter|end|endmodule)\\b"
+			},
+			{
+				"name": "keyword.va",
+				"match": "\\b(real|input|inout|out|electrical)\\b"
+			},
+			{
+				"name": "keyword.operator.new.va",
+				"match": "\\b(module)\\b"
+			}
+		]
 		},
 		"strings": {
 			"name": "string.quoted.double.va",
@@ -26,6 +35,10 @@
 					"match": "\\\\."
 				}
 			]
+		},
+		"comment": {
+			"name": "comment.line.double-slash.va",
+			"match": "\\b(//)\\b"
 		}
 	},
 	"scopeName": "source.va"
