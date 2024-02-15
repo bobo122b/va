@@ -1,0 +1,25 @@
+{
+  "name": "va",
+  "displayName": "verilogA",
+  "description": "Verilog AMS language support",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.86.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "va",
+      "aliases": ["VerilogA", "va"],
+      "extensions": [".va"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "va",
+      "scopeName": "source.va",
+      "path": "./syntaxes/va.tmLanguage.json"
+    }]
+  }
+}
