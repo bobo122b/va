@@ -16,7 +16,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.va",
-				"match": "\\b(if|while|for|return|analog|begin|parameter|end|endmodule)\\b"
+				"match": "\\b(include|if|while|for|return|analog|begin|parameter|end|endmodule)\\b"
 			},
 			{
 				"name": "keyword.va",
@@ -40,8 +40,16 @@
 			]
 		},
 		"comments": {
-			"name": "comment.line.double-slash.va",
-			"match": "\/{2}.*"
+			"patterns": [{
+				"name": "comment.line.double-slash.va",
+				"match": "\/{2}.*"
+			},
+			{
+				"name": "comment.block",
+				"begin": "\/\\*",
+				"end": "\\*\/"
+			}
+		]
 		}
 	},
 	"scopeName": "source.va"
