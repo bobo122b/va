@@ -1,6 +1,6 @@
 # va README
 
-This is the README for your extension "va". After writing up a brief description, we recommend including the following sections.
+This is a VS code extension to support VerilogAMS for devices, analog, and system level engineers to easily model theis systems and follow their dreams.
 
 ## Features
 
